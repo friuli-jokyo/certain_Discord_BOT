@@ -20,7 +20,7 @@ class TrainInfo(commands.Cog):
     def __init__(self, bot:discord.Bot):
         self.bot = bot
 
-    @slash_command()
+    @slash_command(description="公共交通オープンデータセンターの情報をそのまま返します")
     async def odpt_embed(
         self,
         ctx: discord.ApplicationContext,
@@ -32,7 +32,7 @@ class TrainInfo(commands.Cog):
                 await ctx.respond(embed=embed)
                 break
 
-    @slash_command()
+    @slash_command(description="JR東日本で使われている運行情報風に変換します")
     async def jre_embed(
         self,
         ctx: discord.ApplicationContext,
