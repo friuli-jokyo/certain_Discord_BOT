@@ -1,11 +1,11 @@
 import discord
 import odpt2jre
 import odpttraininfo as odpt
-from discord.commands import Option
-from discord.commands import slash_command
+from discord.commands import Option, slash_command
 from discord.ext import commands
 
 from ..util import train_info
+
 
 def get_odpt_line_list():
     info_list = odpt.fetch_info()
